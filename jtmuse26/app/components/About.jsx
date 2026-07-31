@@ -33,7 +33,7 @@ function About() {
           }`}
           style={{ transitionDelay: inView ? "100ms" : "0ms" }}
         >
-          What is JT Muse?
+          What is JT Muse???
         </h2>
         <div
           className={`w-16 h-1 bg-gradient-to-r from-[#dfc797] via-[#fff2d6] to-[#dfc797] rounded-full mb-4 transition-all duration-700 ease-out transform ${
