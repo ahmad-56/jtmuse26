@@ -70,13 +70,13 @@ export function Layout({ children }) {
         />
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+        <link rel="icon" type="image/png" href="/assets/images/favicon.ico" />
         {/* Preload priority for background images and use webp for faster loading times*/}
         <link
           rel="preload"
           as="image"
-          href="/assets/images/bg.webp"
-          imageSrcSet="/assets/images/bg.webp 1x, /assets/images/bg-mobile.png 800w"
+          href="/assets/images/bg.png"
+          imageSrcSet="/assets/images/bg.png 1x, /assets/images/bg-mobile.png 800w"
           imageSizes="(max-width: 800px) 100vw, 100vw"
           type="image/webp"
         />
@@ -95,7 +95,7 @@ export function Layout({ children }) {
         {/* Global background layer with responsive images */}
         <picture>
           <source
-            srcSet="/assets/images/bg.webp"
+            srcSet="/assets/images/bg.png"
             type="image/webp"
             media="(min-width: 801px)"
           />

@@ -7,7 +7,7 @@ export default function Data({
 }) {
   return (
     <div
-      className={`bg-white/10 border border-[#dfc797]/20 rounded-2xl p-4 sm:p-6 shadow-lg transition-all duration-700 ease-out transform hover:scale-[1.03] hover:shadow-2xl hover:border-[#dfc797]/60 ${
+      className={`bg-white/10 border border-[#ffc664]/20 rounded-2xl p-4 sm:p-6 shadow-lg transition-all duration-700 ease-out transform hover:scale-[1.03] hover:shadow-2xl hover:border-[#ffc664]/60 ${
         inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
       }`}
       style={{
@@ -15,7 +15,7 @@ export default function Data({
       }}
     >
       <p
-        className="font-extrabold text-xl sm:text-2xl mb-3 text-[#dfc797] tracking-wide text-center"
+        className="font-extrabold text-xl sm:text-2xl mb-3 text-[#ffc664] tracking-wide text-center"
         style={{ fontFamily: "Nexa, Arial, sans-serif" }}
       >
         {category}
@@ -31,14 +31,14 @@ export default function Data({
               : "Director Registration"}
           </p>
           <p
-            className="font-bold text-base sm:text-lg text-[#dfc797]"
+            className="font-bold text-base sm:text-lg text-[#ffc664]"
             style={{ fontFamily: "Nexa, Arial, sans-serif" }}
           >
             {president.name}
           </p>
           <a
             href={`tel:${president.phone.replace(/\s+/g, "")}`}
-            className="inline-flex items-center justify-center gap-2 text-[#232323] bg-[#dfc797]/80 hover:bg-[#fff2d6] px-4 py-2 rounded-full font-bold shadow transition-colors duration-150 text-sm mt-2"
+            className="inline-flex items-center justify-center gap-2 text-[#232323] bg-[#ffc664]/80 hover:bg-[#fff2d6] px-4 py-2 rounded-full font-bold shadow transition-colors duration-150 text-sm mt-2"
           >
             <svg width="16" height="16" fill="none" viewBox="0 0 24 24">
               <path
@@ -49,7 +49,7 @@ export default function Data({
             {president.phone}
           </a>
         </div>
-        <div className="pt-2 border-t border-[#dfc797]/20 text-center">
+        <div className="pt-2 border-t border-[#ffc664]/20 text-center">
           <p
             className="text-sm sm:text-base text-[#fff2d6] font-semibold mb-1"
             style={{ fontFamily: "Nexa, Arial, sans-serif" }}
@@ -59,14 +59,14 @@ export default function Data({
               : "Director Registration"}
           </p>
           <p
-            className="font-bold text-base sm:text-lg text-[#dfc797]"
+            className="font-bold text-base sm:text-lg text-[#ffc664]"
             style={{ fontFamily: "Nexa, Arial, sans-serif" }}
           >
             {vicePresident.name}
           </p>
           <a
             href={`tel:${vicePresident.phone.replace(/\s+/g, "")}`}
-            className="inline-flex items-center justify-center gap-2 text-[#232323] bg-[#dfc797]/80 hover:bg-[#fff2d6] px-4 py-2 rounded-full font-bold shadow transition-colors duration-150 text-sm mt-2"
+            className="inline-flex items-center justify-center gap-2 text-[#232323] bg-[#ffc664]/80 hover:bg-[#fff2d6] px-4 py-2 rounded-full font-bold shadow transition-colors duration-150 text-sm mt-2"
           >
             <svg width="16" height="16" fill="none" viewBox="0 0 24 24">
               <path

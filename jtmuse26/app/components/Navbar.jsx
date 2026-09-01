@@ -150,11 +150,11 @@ function Navbar({ forceFullWidth = false }) {
           <div className="flex items-center sm:hidden">
             <h2 className="text-lg font-medium whitespace-nowrap">
               JTMUSE
-              <span className="text-[10px] text-yellow-500 animate-pulse inline-block ml-[2px]">
+              <span className="text-[10px] text-[#ffc664] animate-pulse inline-block ml-[2px]">
                 '26
               </span>
             </h2>
-            <div className="inline-block w-8 h-px ml-1 bg-gradient-to-r from-yellow-500 to-transparent" />
+            <div className="inline-block w-8 h-px ml-1 bg-gradient-to-r from-[#ffc664] to-transparent" />
           </div>
 
           <NavbarIcon
@@ -217,8 +217,8 @@ function Navbar({ forceFullWidth = false }) {
                   // Call to action style for register
                   if (link.name === "register") {
                     const baseClasses =
-                      "relative px-3 py-1 md:px-4 rounded-xl sm:py-2 inline-block w-full sm:w-auto text-center font-bold uppercase transition-all duration-300 ease-out transform bg-gradient-to-r from-[#f4c860] via-[#dfc797] to-[#fff2d6] text-[#232323] shadow-lg hover:scale-105 hover:shadow-xl hover:bg-gradient-to-r hover:from-[#ffe9b0] hover:via-[#fff2d6] hover:to-[#ffe9b0]";
-                    const activeClasses = "ring-2 ring-[#f4c860] scale-105";
+                      "relative px-3 py-1 md:px-4 rounded-xl sm:py-2 inline-block w-full sm:w-auto text-center font-bold uppercase transition-all duration-300 ease-out transform bg-gradient-to-r from-[#ffc664] via-[#ffb347] to-[#fff2d6] text-[#232323] shadow-lg hover:scale-105 hover:shadow-xl hover:bg-gradient-to-r hover:from-[#ffd99a] hover:via-[#ffc664] hover:to-[#fff2d6]";
+                    const activeClasses = "ring-2 ring-[#ffc664] scale-105";
                     return `${baseClasses} ${active ? activeClasses : ""}`;
                   }
 

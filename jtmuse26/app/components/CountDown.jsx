@@ -8,6 +8,13 @@ const CountDown = () => {
     seconds: 0,
   });
 
+  const timerNumberStyle = {
+    fontFamily: "Nexa, Arial, sans-serif",
+    fontWeight: 700,
+    WebkitTextStroke: "5px #000000",
+    paintOrder: "stroke fill",
+  };
+
   useEffect(() => {
     const targetDate = new Date("2026-10-09T00:00:00").getTime();
 
@@ -42,57 +49,77 @@ const CountDown = () => {
       {/* Days */}
       <div className="text-center">
         <div
-          className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#dfc797] tabular-nums"
-          style={{ fontFamily: "Nexa, Arial, sans-serif" }}
+          className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#ffc664] tabular-nums"
+          style={timerNumberStyle}
         >
           {String(timeLeft.days).padStart(2, "0")}
         </div>
-        <div className="text-xs sm:text-sm text-[#dfc797] opacity-80 uppercase tracking-widest mt-1">
+        <div
+          className="font-nexa-regular text-xs sm:text-sm text-[#ffc664] opacity-80 uppercase tracking-widest mt-1"
+        >
           Days
         </div>
       </div>
 
-      <div className="text-2xl sm:text-3xl text-[#dfc797] opacity-60">:</div>
+      <div
+        className="text-2xl sm:text-3xl text-[#ffc664] opacity-60"
+      >
+        :
+      </div>
 
       {/* Hours */}
       <div className="text-center">
         <div
-          className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#dfc797] tabular-nums"
-          style={{ fontFamily: "Nexa, Arial, sans-serif" }}
+          className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#ffc664] tabular-nums"
+          style={timerNumberStyle}
         >
           {String(timeLeft.hours).padStart(2, "0")}
         </div>
-        <div className="text-xs sm:text-sm text-[#dfc797] opacity-80 uppercase tracking-widest mt-1">
-          Hours
+        <div
+          className="font-nexa-regular text-xs sm:text-sm text-[#ffc664] opacity-80 uppercase tracking-widest mt-1"
+        >
+          Hour
         </div>
       </div>
 
-      <div className="text-2xl sm:text-3xl text-[#dfc797] opacity-60">:</div>
+      <div
+        className="text-2xl sm:text-3xl text-[#ffc664] opacity-60"
+      >
+        :
+      </div>
 
       {/* Minutes */}
       <div className="text-center">
         <div
-          className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#dfc797] tabular-nums"
-          style={{ fontFamily: "Nexa, Arial, sans-serif" }}
+          className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#ffc664] tabular-nums"
+          style={timerNumberStyle}
         >
           {String(timeLeft.minutes).padStart(2, "0")}
         </div>
-        <div className="text-xs sm:text-sm text-[#dfc797] opacity-80 uppercase tracking-widest mt-1">
+        <div
+          className="font-nexa-regular text-xs sm:text-sm text-[#ffc664] opacity-80 uppercase tracking-widest mt-1"
+        >
           Minutes
         </div>
       </div>
 
-      <div className="text-2xl sm:text-3xl text-[#dfc797] opacity-60">:</div>
+      <div
+        className="text-2xl sm:text-3xl text-[#ffc664] opacity-60"
+      >
+        :
+      </div>
 
       {/* Seconds */}
       <div className="text-center">
         <div
-          className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#dfc797] tabular-nums"
-          style={{ fontFamily: "Nexa, Arial, sans-serif" }}
+          className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#ffc664] tabular-nums"
+          style={timerNumberStyle}
         >
           {String(timeLeft.seconds).padStart(2, "0")}
         </div>
-        <div className="text-xs sm:text-sm text-[#dfc797] opacity-80 uppercase tracking-widest mt-1">
+        <div
+          className="font-nexa-regular text-xs sm:text-sm text-[#ffc664] opacity-80 uppercase tracking-widest mt-1"
+        >
           Seconds
         </div>
       </div>

@@ -174,7 +174,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(250, 204, 21, 0.25);
+    background: rgba(255, 198, 100, 0.25);
     z-index: -1;
     opacity: 0;
     transform: scaleX(0);
@@ -356,7 +356,7 @@
 .particle-1 {
   width: 4px;
   height: 4px;
-  background: radial-gradient(circle, #ffd700, #ffa500);
+  background: radial-gradient(circle, #ffc664, #ff9f43);
   animation: floatUp 15s infinite linear;
   left: 10%;
   animation-delay: -2s;
@@ -383,7 +383,7 @@
 .particle-4 {
   width: 5px;
   height: 5px;
-  background: radial-gradient(circle, #daa520, #b8860b);
+  background: radial-gradient(circle, #ffb347, #d97706);
   animation: floatUp 16s infinite linear;
   left: 60%;
   animation-delay: -12s;
@@ -402,7 +402,7 @@
   position: absolute;
   pointer-events: none;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 215, 0, 0.2), transparent);
+  background: radial-gradient(circle, rgba(255, 198, 100, 0.2), transparent);
   animation: gentleFloat 8s ease-in-out infinite;
 }
 
@@ -426,7 +426,7 @@
   position: absolute;
   width: 2px;
   height: 2px;
-  background: #ffd700;
+  background: #ffc664;
   border-radius: 50%;
   animation: shimmer 4s ease-in-out infinite;
   pointer-events: none;
@@ -505,5 +505,5 @@ body {
   font-size: 2.25rem;
   font-weight: 700;
   margin-bottom: 0.75rem;
-  color: #f4c860;
+  color: #ffc664;
 }

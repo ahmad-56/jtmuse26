@@ -4,7 +4,7 @@ function CategoriesBtn({ href, imgSrc }) {
       href={href}
       className="inline-flex justify-center items-center animated-bg z-10 relative text-white cursor-pointer min-w-[100px] max-w-[130px] w-[30vw] h-[30vw] min-h-[100px] max-h-[130px] rounded-lg overflow-hidden border border-white/20 shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out"
       style={{
-        backgroundImage: 'url("/assets/categories/btnBg.webp")',
+        backgroundImage: 'url("/assets/categories/btnbg.png")',
         backgroundSize: "400% 400%",
         backgroundPosition: "center right",
         backgroundRepeat: "no-repeat",

@@ -1,7 +1,7 @@
 function NavbarIcon({ isExpanded, setIsExpanded, label }) {
   return (
     <div
-      className={`cursor-pointer sm:hidden flex items-center gap-x-1 px-2 py-1 ${isExpanded ? "bg-yellow-400/30 rounded-lg" : ""}`}
+      className={`cursor-pointer sm:hidden flex items-center gap-x-1 px-2 py-1 ${isExpanded ? "bg-[#ffc664]/30 rounded-lg" : ""}`}
       onClick={() => setIsExpanded((prev) => !prev)}
     >
       <div className="uppercase text-sm ">{label}</div>
