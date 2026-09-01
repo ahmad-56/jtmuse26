@@ -3,7 +3,7 @@ import subCategoryData from "@/subCategoryData";
 
 export async function loader({ params }) {}
 
-function subCategory({ params }) {
+function SubCategory({ params }) {
   const [inView, setInView] = useState(false);
   const categoryRef = useRef(null);
 
@@ -14,22 +14,29 @@ function subCategory({ params }) {
       },
       { threshold: [0.1, 1] }
     );
+
     if (categoryRef.current) {
       observer.observe(categoryRef.current);
     }
+
     return () => {
-      if (categoryRef.current) observer.unobserve(categoryRef.current);
+      if (categoryRef.current) {
+        observer.unobserve(categoryRef.current);
+      }
     };
   }, []);
+
   const { Category } = params;
+
   const CategoryData = subCategoryData.find(
     (item) => item.category === Category
   );
+
   if (!CategoryData) {
     return (
-      <div className="pt-20 min-h-[100vh]">
+      <div className="min-h-[100vh] pt-20">
         <h1
-          className={`text-4xl sm:text-5xl pb-1 font-extrabold italic bg-gradient-to-r from-[#dfc797] via-[#fff2d6] to-[#dfc797] bg-clip-text text-transparent mb-2 drop-shadow-lg tracking-tight text-center transition-all duration-700 ease-out `}
+          className="mb-2 bg-gradient-to-r from-[#ffc664] via-[#fff2d6] to-[#ffc664] bg-clip-text pb-1 text-center text-4xl font-extrabold italic tracking-tight text-transparent drop-shadow-lg sm:text-5xl"
           style={{ fontFamily: "Montserrat, Inter, sans-serif" }}
         >
           Not Found
@@ -37,38 +44,52 @@ function subCategory({ params }) {
       </div>
     );
   }
+
   const subCategories = CategoryData.subCategories;
 
   return (
     <article
       ref={categoryRef}
-      className="py-10 min-h-[100dvh]  bg-gradient-to-br from-[#232323]/10 to-[#181818]/10 backdrop-blur border border-white/20 shadow-2xl "
+      className="relative min-h-[100dvh] border border-white/20 bg-gradient-to-br from-[#232323]/10 to-[#181818]/10 py-10 shadow-2xl backdrop-blur"
     >
-      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-[#232323]/40 to-[#181818]/40 backdrop-blur border border-white/20" />
-
-      <div className="sticky top-0 z-20 flex flex-row justify-center items-center gap-6 mb-12 sm:mb-13 "></div>
+      <div className="absolute inset-0 -z-10 border border-white/20 bg-gradient-to-br from-[#232323]/40 to-[#181818]/40 backdrop-blur" />
+      
+       <a
+        href="/#categories"
+        className="absolute lg:left-28 top-24 z-50 font-nexa-regular text-sm text-[#fff2d6]/70 transition-colors duration-200 hover:text-[#ffc664] sm:left-8"
+      >
+        ← Back To Categories
+      </a>
+      
+      <div className="h-20" />
       <h1
-        className={`text-4xl sm:text-5xl pb-1 font-extrabold bg-gradient-to-r from-[#dfc797] via-[#fff2d6] to-[#dfc797] bg-clip-text text-transparent mb-2 drop-shadow-lg tracking-tight text-center transition-all duration-700 ease-out  ${
-          inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+        className={`mb-2 bg-gradient-to-r from-[#ffc664] via-[#fff2d6] to-[#ffc664] bg-clip-text pb-1 text-center text-4xl font-extrabold tracking-tight text-transparent drop-shadow-lg transition-all duration-700 ease-out sm:text-5xl ${
+          inView
+            ? "translate-y-0 opacity-100"
+            : "translate-y-8 opacity-0"
         }`}
         style={{ fontFamily: "Montserrat, Inter, sans-serif" }}
       >
         {Category}
       </h1>
-      <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 px-2 sm:px-10 justify-center items-center">
+
+      <div className="mt-12 grid w-full grid-cols-1 items-center justify-center gap-8 px-2 sm:grid-cols-2 sm:px-10 lg:grid-cols-2">
         {subCategories.map((subCat, index) => (
           <a
-            target="_blank"
-            href={subCat.path}
             key={index}
-            className="group relative flex flex-col items-center justify-center p-6 min-h-[120px] sm:min-h-[140px] w-full sm:w-[90%] lg:w-[80%] mx-auto rounded-2xl bg-gradient-to-br from-[#232323]/60 to-[#181818]/60 border border-[#dfc797]/30 shadow-xl hover:shadow-2xl hover:border-[#dfc797]/60 transition-all duration-300 ease-in-out overflow-hidden backdrop-blur-md"
-            style={{}}
+            href={subCat.path}
+            target="_blank"
+            rel="noreferrer"
+            className="group relative mx-auto flex min-h-[120px] w-full flex-col items-center justify-center overflow-hidden rounded-2xl border border-[#ffc664]/30 bg-gradient-to-br from-[#232323]/60 to-[#181818]/60 p-6 shadow-xl backdrop-blur-md transition-all duration-300 ease-in-out hover:border-[#ffc664]/60 hover:shadow-2xl sm:min-h-[140px] sm:w-[90%] lg:w-[80%]"
           >
-            <span className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition duration-300 rounded-2xl z-0" />
-            <span className="relative z-10 text-[#dfc797] font-nexa-regular text-xl sm:text-2xl font-bold drop-shadow-lg mb-2 text-center tracking-wide break-words whitespace-normal break-all hyphens-auto">
+            <div className="pointer-events-none absolute inset-y-0 -left-1/2 w-1/3 -skew-x-12 bg-gradient-to-r from-transparent via-white/10 to-transparent transition-all duration-1000 group-hover:left-[125%]" />
+            
+            <span className="absolute inset-0 z-0 rounded-2xl bg-white/10 opacity-0 transition duration-300 group-hover:opacity-100" />
+            
+            <span className="relative z-10 mb-2 whitespace-normal break-words text-center font-nexa-regular text-xl font-bold tracking-wide text-[#ffc664] drop-shadow-lg sm:text-2xl">
               {subCat.name}
             </span>
-            <span className="relative z-10 text-[#fff2d6] text-base sm:text-lg font-medium text-center mt-1 break-words whitespace-normal break-all hyphens-auto">
+            <span className="relative z-10 mt-1 whitespace-normal break-words text-center text-base font-medium text-[#fff2d6] sm:text-lg">
               {subCat.description || "Click to view details"}
             </span>
           </a>
@@ -78,4 +99,4 @@ function subCategory({ params }) {
   );
 }
 
-export default subCategory;
+export default SubCategory;
