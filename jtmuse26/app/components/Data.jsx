@@ -7,11 +7,11 @@ export default function Data({
 }) {
   return (
     <div
-      className={`bg-white/10 border border-[#ffc664]/20 rounded-2xl p-4 sm:p-6 shadow-lg transition-all duration-700 ease-out transform hover:scale-[1.03] hover:shadow-2xl hover:border-[#ffc664]/60 ${
+      className={`contact-card bg-white/10 border border-[#ffc664]/20 rounded-2xl p-4 sm:p-6 shadow-lg ease-out transform hover:scale-[1.02] hover:shadow-2xl hover:border-[#ffc664]/60 ${
         inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
       }`}
       style={{
-        transitionDelay: inView ? `${400 + index * 80}ms` : "0ms",
+        "--contact-reveal-delay": inView ? `${400 + index * 80}ms` : "0ms",
       }}
     >
       <p

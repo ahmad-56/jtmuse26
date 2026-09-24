@@ -32,7 +32,7 @@ const Hero = () => {
           <div
             className="text-center z-20 w-full"
             style={{
-              animation: "fadeInUp 1.5s ease-out 0.3s both",
+              animation: "fadeInUp 0.8s ease-out 0.3s both",
             }}
           >
             <div className="flex items-center justify-center w-full mx-auto mt-4 mb-16 px-2 sm:my-4 sm:px-4">

@@ -34,7 +34,7 @@ function Contact() {
       {/* Section Heading */}
       <section className="w-full max-w-7xl mx-auto flex flex-col items-center mb-10">
         <h1
-          className={`text-4xl sm:text-5xl font-extrabold bg-gradient-to-r from-[#ffc664] via-[#fff2d6] to-[#ffc664] bg-clip-text text-transparent mb-2 drop-shadow-lg tracking-tight text-center transition-all duration-700 ease-out transform ${
+          className={`text-4xl sm:text-5xl font-extrabold text-[#ffc664] mb-2 drop-shadow-lg tracking-tight text-center transition-all duration-700 ease-out transform ${
             inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
           style={{

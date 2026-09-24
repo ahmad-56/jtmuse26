@@ -59,7 +59,7 @@ export default function Home() {
         <div className="bg-gradient-to-br from-[#232323]/80 to-[#181818]/80 backdrop-blur pt-15 pb-10 sm:pt-14 px-6 lg:px-10">
           <div ref={contactRef} className="mx-auto">
             <h2
-              className={`text-3xl sm:text-4xl md:text-5xl pb-1.5 font-extrabold bg-gradient-to-r from-[#ffc664] via-[#fff2d6] to-[#ffc664] bg-clip-text text-transparent mb-2 drop-shadow-lg tracking-tight text-center transition-all duration-700 ease-out transform ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+              className={`text-3xl sm:text-4xl md:text-5xl pb-1.5 font-extrabold text-[#ffc664] mb-2 drop-shadow-lg tracking-tight text-center transition-all duration-700 ease-out transform ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
             >
               Registrations
             </h2>
@@ -72,7 +72,7 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 mt-8 justify-center mb-15 w-full">
                   {/* card 1 */}
                   <div
-                    className={`bg-white/10 border border-[#ffc664]/20 rounded-2xl flex-1 p-4 sm:p-6 shadow-lg ease-out transform hover:scale-[1.03] hover:border-[#ffc664]/60 text-center transition-all duration-700 ${inView ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"}`}
+                    className={`contact-card bg-white/10 border border-[#ffc664]/20 rounded-2xl flex-1 p-4 sm:p-6 shadow-lg ease-out transform hover:scale-[1.02] hover:border-[#ffc664]/60 text-center ${inView ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"}`}
                   >
                     <div
                       className="text-sm sm:text-base text-[#fff2d6] font-semibold mb-1"
@@ -108,7 +108,7 @@ export default function Home() {
 
                   {/* card 2 */}
                   <div
-                    className={`bg-white/10 border border-[#ffc664]/20 rounded-2xl flex-1 p-4 sm:p-6 shadow-lg ease-out transform hover:scale-[1.03] hover:border-[#ffc664]/60 text-center transition-all duration-700 ${inView ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"}`}
+                    className={`contact-card bg-white/10 border border-[#ffc664]/20 rounded-2xl flex-1 p-4 sm:p-6 shadow-lg ease-out transform hover:scale-[1.02] hover:border-[#ffc664]/60 text-center ${inView ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"}`}
                   >
                     <div
                       className="text-sm sm:text-base text-[#fff2d6] font-semibold mb-1"
@@ -142,7 +142,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <Location headingColor="transparent" />
+              <Location />
             </div>
           </div>
         </div>

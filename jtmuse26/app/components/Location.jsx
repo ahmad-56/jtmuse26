@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-const Location = ({ contacts = [], directors = [], headingColor }) => {
+const Location = ({ contacts = [], directors = [] }) => {
   const [inView, setInView] = useState(false);
   const ref = useRef(null);
 
@@ -30,10 +30,9 @@ const Location = ({ contacts = [], directors = [], headingColor }) => {
       }}
     >
       <h2
-        className="text-3xl sm:text-4xl md:text-5xl pb-1.5 font-extrabold bg-gradient-to-r from-[#ffc664] via-[#fff2d6] to-[#ffc664] bg-clip-text text-transparent mb-2 drop-shadow-lg tracking-tight text-center transition-all duration-700 ease-out transform"
+        className="text-3xl sm:text-4xl md:text-5xl pb-1.5 font-extrabold text-[#ffc664] mb-2 drop-shadow-lg tracking-tight text-center transition-all duration-700 ease-out transform"
         style={{
           fontFamily: "Nexa, Arial, sans-serif",
-          color: headingColor,
         }}
       >
         Location

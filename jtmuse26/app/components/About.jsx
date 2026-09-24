@@ -28,7 +28,7 @@ function About() {
     >
       <div className="flex flex-col items-center text-center">
         <h2
-          className={`text-3xl sm:text-4xl md:text-5xl pb-1.5 font-extrabold bg-gradient-to-r from-[#ffc664] via-[#fff2d6] to-[#ffc664] bg-clip-text text-transparent mb-2 drop-shadow-lg tracking-tight text-center transition-all duration-700 ease-out transform ${
+          className={`text-3xl sm:text-4xl md:text-5xl pb-1.5 font-extrabold text-[#ffc664] mb-2 drop-shadow-lg tracking-tight text-center transition-all duration-700 ease-out transform ${
             inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
           style={{ transitionDelay: inView ? "100ms" : "0ms" }}
