@@ -6,6 +6,7 @@ import Contact from "@/components/Contact";
 import contacts from "@/ContactInfo";
 import Data from "@/components/Data";
 import Location from "@/components/Location";
+import SocialLinks from "@/components/SocialLinks";
 import Categories from "@/components/Categories";
 import { useState, useEffect, useRef } from "react";
 
@@ -143,6 +144,7 @@ export default function Home() {
                 </div>
               </div>
               <Location />
+              <SocialLinks />
             </div>
           </div>
         </div>
