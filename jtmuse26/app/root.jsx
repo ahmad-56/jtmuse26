@@ -80,7 +80,11 @@ export function Layout({ children }) {
         />
         <meta
           property="og:image"
-          content="https://lgsjtmuse.com/assets/images/insta.jpg"
+          content="https://jtmuse.com/assets/images/insta.jpg"
+        />
+        <meta
+          property="og:image"
+          content="https://jtmuse26.vercel.app/assets/images/insta.jpg"
         />
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="1080" />
