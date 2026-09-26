@@ -48,7 +48,7 @@ const Hero = () => {
           <div
             className="relative z-10 flex w-full -translate-y-14 items-center justify-center sm:-translate-y-3 sm:px-10 sm:py-16"
             style={{
-              animation: "fadeIn 1s ease-out 1.2s both",
+              animation: "fadeIn 0.8s ease-out 1.0s both",
             }}
           >
             <img
