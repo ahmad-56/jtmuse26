@@ -150,7 +150,7 @@ function Navbar({ forceFullWidth = false }) {
           <div className="flex items-center sm:hidden">
             <h2 className="text-lg font-medium whitespace-nowrap">
               JTMUSE
-              <span className="text-[10px] text-[#ffc664] animate-pulse inline-block ml-[2px]">
+              <span className="text-[10px] text-brand-gold animate-pulse inline-block ml-[2px]">
                 '26
               </span>
             </h2>

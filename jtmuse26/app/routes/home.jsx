@@ -59,7 +59,7 @@ export default function Home() {
         <div className="bg-gradient-to-br from-[#232323]/80 to-[#181818]/80 backdrop-blur pt-15 pb-10 sm:pt-14 px-6 lg:px-10">
           <div ref={contactRef} className="mx-auto">
             <h2
-              className={`text-3xl sm:text-4xl md:text-5xl pb-1.5 font-extrabold text-[#ffc664] mb-2 drop-shadow-lg tracking-tight text-center transition-all duration-700 ease-out transform ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+              className={`text-3xl sm:text-4xl md:text-5xl pb-1.5 font-extrabold text-brand-gold mb-2 drop-shadow-lg tracking-tight text-center transition-all duration-700 ease-out transform ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
             >
               Registrations
             </h2>
@@ -82,7 +82,7 @@ export default function Home() {
                     </div>
 
                     <div
-                      className="font-bold text-base sm:text-lg text-[#ffc664]"
+                      className="font-bold text-base sm:text-lg text-brand-gold"
                       style={{ fontFamily: "Nexa, Arial, sans-serif" }}
                     >
                       {regiInfo.president.name}
@@ -117,7 +117,7 @@ export default function Home() {
                       Director Registrations
                     </div>
                     <div
-                      className="font-bold text-base sm:text-lg text-[#ffc664]"
+                      className="font-bold text-base sm:text-lg text-brand-gold"
                       style={{ fontFamily: "Nexa, Arial sans-serif" }}
                     >
                       {regiInfo.vicePresident.name}

@@ -34,7 +34,7 @@ function Contact() {
       {/* Section Heading */}
       <section className="w-full max-w-7xl mx-auto flex flex-col items-center mb-10">
         <h1
-          className={`text-4xl sm:text-5xl font-extrabold text-[#ffc664] mb-2 drop-shadow-lg tracking-tight text-center transition-all duration-700 ease-out transform ${
+          className={`text-4xl sm:text-5xl font-extrabold text-brand-gold mb-2 drop-shadow-lg tracking-tight text-center transition-all duration-700 ease-out transform ${
             inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
           style={{
@@ -71,7 +71,7 @@ function Contact() {
             href="https://lgsjtmuse.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[#ffc664] transition-colors"
+            className="hover:text-brand-gold transition-colors"
             aria-label="Website"
           >
             <svg width="26" height="26" fill="none" viewBox="0 0 24 24">
@@ -83,7 +83,7 @@ function Contact() {
           </a>
           <a
             href="mailto:lgsjtmuse@gmail.com"
-            className="hover:text-[#ffc664] transition-colors"
+            className="hover:text-brand-gold transition-colors"
             aria-label="Email"
           >
             <svg width="26" height="26" fill="none" viewBox="0 0 24 24">
@@ -97,7 +97,7 @@ function Contact() {
             href="https://instagram.com/lgsjt.muse"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[#ffc664] transition-colors"
+            className="hover:text-brand-gold transition-colors"
             aria-label="Instagram"
           >
             <svg width="26" height="26" fill="none" viewBox="0 0 24 24">

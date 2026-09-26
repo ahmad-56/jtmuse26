@@ -49,20 +49,20 @@ const CountDown = () => {
       {/* Days */}
       <div className="text-center">
         <div
-          className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#ffc664] tabular-nums"
+          className="text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-gold tabular-nums"
           style={timerNumberStyle}
         >
           {String(timeLeft.days).padStart(2, "0")}
         </div>
         <div
-          className="font-nexa-regular text-xs sm:text-sm text-[#ffc664] opacity-80 uppercase tracking-widest mt-1"
+          className="font-nexa-regular text-xs sm:text-sm text-brand-gold opacity-80 uppercase tracking-widest mt-1"
         >
           Days
         </div>
       </div>
 
       <div
-        className="text-2xl sm:text-3xl text-[#ffc664] opacity-60"
+        className="text-2xl sm:text-3xl text-brand-gold opacity-60"
       >
         :
       </div>
@@ -70,20 +70,20 @@ const CountDown = () => {
       {/* Hours */}
       <div className="text-center">
         <div
-          className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#ffc664] tabular-nums"
+          className="text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-gold tabular-nums"
           style={timerNumberStyle}
         >
           {String(timeLeft.hours).padStart(2, "0")}
         </div>
         <div
-          className="font-nexa-regular text-xs sm:text-sm text-[#ffc664] opacity-80 uppercase tracking-widest mt-1"
+          className="font-nexa-regular text-xs sm:text-sm text-brand-gold opacity-80 uppercase tracking-widest mt-1"
         >
           Hour
         </div>
       </div>
 
       <div
-        className="text-2xl sm:text-3xl text-[#ffc664] opacity-60"
+        className="text-2xl sm:text-3xl text-brand-gold opacity-60"
       >
         :
       </div>
@@ -91,20 +91,20 @@ const CountDown = () => {
       {/* Minutes */}
       <div className="text-center">
         <div
-          className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#ffc664] tabular-nums"
+          className="text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-gold tabular-nums"
           style={timerNumberStyle}
         >
           {String(timeLeft.minutes).padStart(2, "0")}
         </div>
         <div
-          className="font-nexa-regular text-xs sm:text-sm text-[#ffc664] opacity-80 uppercase tracking-widest mt-1"
+          className="font-nexa-regular text-xs sm:text-sm text-brand-gold opacity-80 uppercase tracking-widest mt-1"
         >
           Minutes
         </div>
       </div>
 
       <div
-        className="text-2xl sm:text-3xl text-[#ffc664] opacity-60"
+        className="text-2xl sm:text-3xl text-brand-gold opacity-60"
       >
         :
       </div>
@@ -112,13 +112,13 @@ const CountDown = () => {
       {/* Seconds */}
       <div className="text-center">
         <div
-          className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#ffc664] tabular-nums"
+          className="text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-gold tabular-nums"
           style={timerNumberStyle}
         >
           {String(timeLeft.seconds).padStart(2, "0")}
         </div>
         <div
-          className="font-nexa-regular text-xs sm:text-sm text-[#ffc664] opacity-80 uppercase tracking-widest mt-1"
+          className="font-nexa-regular text-xs sm:text-sm text-brand-gold opacity-80 uppercase tracking-widest mt-1"
         >
           Seconds
         </div>

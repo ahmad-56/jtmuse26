@@ -28,7 +28,7 @@ function About() {
     >
       <div className="flex flex-col items-center text-center">
         <h2
-          className={`text-3xl sm:text-4xl md:text-5xl pb-1.5 font-extrabold text-[#ffc664] mb-2 drop-shadow-lg tracking-tight text-center transition-all duration-700 ease-out transform ${
+          className={`text-3xl sm:text-4xl md:text-5xl pb-1.5 font-extrabold text-brand-gold mb-2 drop-shadow-lg tracking-tight text-center transition-all duration-700 ease-out transform ${
             inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
           style={{ transitionDelay: inView ? "100ms" : "0ms" }}
@@ -61,7 +61,7 @@ function About() {
             their most authentic selves. Muse, where talent finds 
             its voice and creativity finds its purpose.
           </p>
-          {/*<span className="font-bold text-[#ffc664]">if they want to make anything bold later on</span>*/}
+          {/*<span className="font-bold text-brand-gold">if they want to make anything bold later on</span>*/}
         </div>
         <div
           className={`w-full flex justify-center mt-6 transition-all duration-700 ease-out ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
@@ -83,7 +83,7 @@ function About() {
           style={{ transitionDelay: inView ? "500ms" : "0ms" }}
         >
           <div className="flex-1 bg-white/5 rounded-2xl p-6 border border-[#ffc664]/10 shadow-lg min-h-0">
-            <h3 className="text-xl font-bold text-[#ffc664] mb-2">
+            <h3 className="text-xl font-bold text-brand-gold mb-2">
               Muse x Empresario
             </h3>
             <p className="text-[#f7f6f4] text-base sm:text-lg text-justify font-nexa-regular">
@@ -97,7 +97,7 @@ function About() {
             </p>
           </div>
           <div className="flex-1 bg-white/5 rounded-2xl p-6 border border-[#ffc664]/10 shadow-lg min-h-0">
-            <h3 className="text-xl font-bold text-[#ffc664] mb-2">
+            <h3 className="text-xl font-bold text-brand-gold mb-2">
               Muse + Artography
             </h3>
             <p className="text-[#f7f6f4] text-base sm:text-lg text-justify font-nexa-regular">

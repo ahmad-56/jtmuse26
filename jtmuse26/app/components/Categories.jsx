@@ -58,7 +58,7 @@ function Categories() {
       id="categories"
     >
       <h2
-        className={`text-3xl sm:text-4xl md:text-5xl pb-1.5 font-extrabold text-[#ffc664] mb-2 drop-shadow-lg tracking-tight text-center transition-all duration-700 ease-out transform ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+        className={`text-3xl sm:text-4xl md:text-5xl pb-1.5 font-extrabold text-brand-gold mb-2 drop-shadow-lg tracking-tight text-center transition-all duration-700 ease-out transform ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
       >
         Categories
       </h2>
@@ -87,7 +87,7 @@ function Categories() {
                 alt={btn.label}
               />
             </a>
-            <span className="mt-4 text-lg md:text-xl font-nexa-regular text-[#ffc664] drop-shadow-md tracking-wide text-center select-none">
+            <span className="mt-4 text-lg md:text-xl font-nexa-regular text-brand-gold drop-shadow-md tracking-wide text-center select-none">
               {btn.label}
             </span>
           </div>

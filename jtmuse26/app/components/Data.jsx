@@ -15,7 +15,7 @@ export default function Data({
       }}
     >
       <p
-        className="font-extrabold text-xl sm:text-2xl mb-3 text-[#ffc664] tracking-wide text-center"
+        className="font-extrabold text-xl sm:text-2xl mb-3 text-brand-gold tracking-wide text-center"
         style={{ fontFamily: "Nexa, Arial, sans-serif" }}
       >
         {category}
@@ -31,7 +31,7 @@ export default function Data({
               : "Director Registration"}
           </p>
           <p
-            className="font-bold text-base sm:text-lg text-[#ffc664]"
+            className="font-bold text-base sm:text-lg text-brand-gold"
             style={{ fontFamily: "Nexa, Arial, sans-serif" }}
           >
             {president.name}
@@ -59,7 +59,7 @@ export default function Data({
               : "Director Registration"}
           </p>
           <p
-            className="font-bold text-base sm:text-lg text-[#ffc664]"
+            className="font-bold text-base sm:text-lg text-brand-gold"
             style={{ fontFamily: "Nexa, Arial, sans-serif" }}
           >
             {vicePresident.name}
