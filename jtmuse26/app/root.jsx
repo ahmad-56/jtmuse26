@@ -71,8 +71,24 @@ export function Layout({ children }) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="JT Muse" />
+        <meta property="og:title" content="JT Muse'26" />
+        <meta
+          property="og:description"
+          content="The fourth edition of LGS JT's premier arts olympiad."
+        />
         <meta
           property="og:image"
+          content="https://lgsjtmuse.com/assets/images/insta.jpg"
+        />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="1080" />
+        <meta property="og:image:height" content="1080" />
+        <meta property="og:image:alt" content="JT Muse'26" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:image"
           content="https://lgsjtmuse.com/assets/images/insta.jpg"
         />
         {/* Preload priority for background images and use webp for faster loading times*/}
