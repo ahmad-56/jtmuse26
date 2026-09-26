@@ -19,7 +19,7 @@ export function meta() {
     {
       name: "description",
       content:
-        "The official website for the forth edition of LGS JT's premier arts olympiad.",
+        "The Fourth Edition of LGS JT's Art Olympiad, hosted by the Arts Council. 9 • 10 • 11 October 2026",
     },
   ];
 }
