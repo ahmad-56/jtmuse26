@@ -72,9 +72,9 @@ function Categories() {
           <div key={index} className="flex flex-col items-center w-full">
             <a
               href={btn.href}
-              className="inline-flex justify-center items-center animated-bg z-10 relative text-white cursor-pointer min-w-[120px] max-w-[180px] w-[40vw] h-[40vw] min-h-[120px] max-h-[180px] md:min-w-[160px] md:max-w-[220px] md:min-h-[160px] md:max-h-[220px] rounded-2xl overflow-hidden border border-[#ffc664]/30 shadow-xl hover:shadow-2xl transition-shadow duration-300 ease-in-out bg-gradient-to-br from-[#232323]/70 to-[#181818]/70 backdrop-blur-md"
+              className="inline-flex justify-center items-center animated-bg z-10 relative text-white cursor-pointer min-w-[120px] max-w-[180px] w-[40vw] h-[40vw] min-h-[120px] max-h-[180px] md:min-w-[160px] md:max-w-[220px] md:min-h-[160px] md:max-h-[220px] rounded-2xl overflow-hidden border border-brand-gold/30 shadow-xl hover:shadow-2xl transition-shadow duration-300 ease-in-out bg-gradient-to-br from-[#232323]/70 to-[#181818]/70 backdrop-blur-md"
               style={{
-                backgroundImage: 'url("/assets/categories/btnbg.png")',
+                backgroundImage: 'url("/assets/categories/btnBg.webp")',
                 backgroundSize: "400% 400%",
                 backgroundPosition: "center right",
                 backgroundRepeat: "no-repeat",

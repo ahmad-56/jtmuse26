@@ -217,8 +217,8 @@ function Navbar({ forceFullWidth = false }) {
                   // Call to action style for register
                   if (link.name === "register") {
                     const baseClasses =
-                      "relative px-3 py-1 md:px-4 rounded-xl sm:py-2 inline-block w-full sm:w-auto text-center font-bold uppercase transition-all duration-300 ease-out transform bg-gradient-to-r from-[#ffc664] via-[#ffb347] to-[#fff2d6] text-[#232323] shadow-lg hover:scale-105 hover:shadow-xl hover:bg-gradient-to-r hover:from-[#ffd99a] hover:via-[#ffc664] hover:to-[#fff2d6]";
-                    const activeClasses = "ring-2 ring-[#ffc664] scale-105";
+                      "relative px-3 py-1 md:px-4 rounded-xl sm:py-2 inline-block w-full sm:w-auto text-center font-bold uppercase transition-all duration-300 ease-out transform bg-brand-gold text-[#232323] shadow-lg hover:scale-105 hover:shadow-xl hover:bg-[#fff2d6]";
+                    const activeClasses = "ring-2 ring-brand-gold scale-105";
                     return `${baseClasses} ${active ? activeClasses : ""}`;
                   }
 

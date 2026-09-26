@@ -2,10 +2,10 @@ import { useRef, useState } from "react";
 
 const Button = ({
   text,
-  glowColor = "#3b82f6",
+  glowColor = "var(--color-brand-gold)",
   onClick,
-  color = "#3b82f6",
-  textColor = "#ffffff"
+  color = "var(--color-brand-gold)",
+  textColor = "#232323"
 }) => {
   const btnRef = useRef(null);
   const [hovered, setHovered] = useState(false);

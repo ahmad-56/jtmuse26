@@ -70,7 +70,7 @@ function About() {
           <a href="/assets/pdf/invite.pdf" target="_blank" rel="noopener noreferrer">
             <Button
               text="View Event Invite"
-              color="#ffc664"
+              color="var(--color-brand-gold)"
               textColor="#232323"
               glowColor="#fff2d6"
             />

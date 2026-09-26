@@ -75,18 +75,16 @@ export function Layout({ children }) {
         <link
           rel="preload"
           as="image"
-          href="/assets/images/bg.png"
-          imageSrcSet="/assets/images/bg.png 1x, /assets/images/bg-mobile.png 800w"
-          imageSizes="(max-width: 800px) 100vw, 100vw"
+          href="/assets/images/bg.webp"
+          media="(min-width: 801px)"
           type="image/webp"
         />
         <link
           rel="preload"
           as="image"
-          href="/assets/images/bg-mobile.png"
-          imageSrcSet="/assets/images/bg-mobile.png 800w"
-          imageSizes="(max-width: 800px) 100vw, 100vw"
-          type="image/png"
+          href="/assets/images/bg-mobile.webp"
+          media="(max-width: 800px)"
+          type="image/webp"
         />
         <Meta />
         <Links />
@@ -95,17 +93,17 @@ export function Layout({ children }) {
         {/* Global background layer with responsive images */}
         <picture>
           <source
-            srcSet="/assets/images/bg.png"
+            srcSet="/assets/images/bg.webp"
             type="image/webp"
             media="(min-width: 801px)"
           />
           <source
-            srcSet="/assets/images/bg-mobile.png"
-            type="image/png"
+            srcSet="/assets/images/bg-mobile.webp"
+            type="image/webp"
             media="(max-width: 800px)"
           />
           <img
-            src="/assets/images/bg-mobile.png"
+            src="/assets/images/bg-mobile.webp"
             alt="Background"
             className="fixed inset-0 w-full min-h-screen bg-img-stable object-cover object-center bg-muted -z-10 select-none pointer-events-none"
             style={{

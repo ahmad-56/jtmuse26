@@ -89,7 +89,7 @@ export default function Home() {
                     </div>
                     <a
                       href={`tel:${regiInfo.president.phone}`}
-                      className="inline-flex items-center justify-center gap-2 text-[#232323] bg-[#ffc664]/80 hover:bg-[#fff2d6] px-4 py-2 rounded-full font-bold shadow transition-colors duration-150 text-sm mt-2"
+                      className="inline-flex items-center justify-center gap-2 text-[#232323] bg-brand-gold hover:bg-[#fff2d6] px-4 py-2 rounded-full font-bold shadow transition-colors duration-150 text-sm mt-2"
                     >
                       <svg
                         width="16"
@@ -124,7 +124,7 @@ export default function Home() {
                     </div>
                     <a
                       href={`tel:${regiInfo.vicePresident.phone}`}
-                      className="inline-flex items-center justify-center gap-2 text-[#232323] bg-[#ffc664]/80 hover:bg-[#fff2d6] px-4 py-2 rounded-full font-bold shadow transition-colors duration-150 text-sm mt-2"
+                      className="inline-flex items-center justify-center gap-2 text-[#232323] bg-brand-gold hover:bg-[#fff2d6] px-4 py-2 rounded-full font-bold shadow transition-colors duration-150 text-sm mt-2"
                     >
                       <svg
                         width="16"

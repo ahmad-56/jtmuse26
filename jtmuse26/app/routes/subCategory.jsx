@@ -81,7 +81,7 @@ function SubCategory({ params }) {
             aria-disabled={!subCat.path || undefined}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative mx-auto flex min-h-[120px] w-full cursor-pointer flex-col items-center justify-center overflow-hidden rounded-2xl border border-[#ffc664]/30 bg-gradient-to-br from-[#232323]/60 to-[#181818]/60 p-6 shadow-xl backdrop-blur-md transition-all duration-300 ease-in-out hover:border-[#ffc664]/60 hover:shadow-2xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#ffc664] sm:min-h-[140px] sm:w-[90%] lg:w-[80%]"
+            className="group relative mx-auto flex min-h-[120px] w-full cursor-pointer flex-col items-center justify-center overflow-hidden rounded-2xl border border-brand-gold/30 bg-gradient-to-br from-[#232323]/60 to-[#181818]/60 p-6 shadow-xl backdrop-blur-md transition-all duration-300 ease-in-out hover:border-brand-gold/60 hover:shadow-2xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-gold sm:min-h-[140px] sm:w-[90%] lg:w-[80%]"
           >
             <span className="pointer-events-none absolute inset-y-0 -left-1/2 w-1/3 -skew-x-12 bg-gradient-to-r from-transparent via-white/10 to-transparent transition-all duration-1000 group-hover:left-[125%]" />
             
