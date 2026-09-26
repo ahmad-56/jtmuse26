@@ -1,78 +1,117 @@
 const data = [
   {
-    category: "Arts",
-    subCategories: [
-      { name: "A Mural Dilemma", path: "/assets/pdf/art/mural_dilemma.pdf" },
-      { name: "Hue? What? Where?", path: "/assets/pdf/art/Hue_what_where.pdf" },
-      { name: "Still M.U.S.E", path: "/assets/pdf/art/still_muse.pdf" },
-      { name: "Ctrl-X; Ctrl-V", path: "/assets/pdf/art/ctrl_x_ctrl_v.pdf" },
-    ],
+    "category": "Arts",
+    "subCategories": [
+      {
+        "name": "Comp 101",
+        "path": "/assets/study%20guides/Arts/Comp%20101%20Study%20Guide%20MUSE.pdf"
+      },
+      {
+        "name": "Panel Panic",
+        "path": "/assets/study%20guides/Arts/Panel%20panic%20Study%20Guide%20MUSE.pdf"
+      },
+      {
+        "name": "Pass The Paint",
+        "path": "/assets/study%20guides/Arts/Pass%20The%20Paint%20Study%20Guide%20MUSE.pdf"
+      },
+      {
+        "name": "Spray & Pray",
+        "path": "/assets/study%20guides/Arts/Spray%20%26%20Pray%20Study%20Guide%20MUSE.pdf"
+      }
+    ]
   },
   {
-    category: "Media",
-    subCategories: [
+    "category": "Media",
+    "subCategories": [
       {
-        name: "Wannabe Influencer 3.0",
-        path: "/assets/pdf/Media/Wannabe_Influencer.pdf",
+        "name": "Director's Cut",
+        "path": "/assets/study%20guides/Media/Director_s%20Cut%20Study%20Guide%20MUSE.pdf"
       },
-      { name: "Comp_2.prproj", path: "/assets/pdf/Media/Comp_2_prproj.pdf" },
-      { name: "TPDK", path: "/assets/pdf/Media/TPDK.pdf" },
-      { name: "Gartic Photo", path: "/assets/pdf/Media/Gartic.pdf" },
-    ],
+      {
+        "name": "Gartic-photo",
+        "path": "/assets/study%20guides/Media/Gartic-photo%20Study%20Guide%20MUSE.pdf"
+      },
+      {
+        "name": "TPDC",
+        "path": "/assets/study%20guides/Media/TPDC%20Study%20Guide%20MUSE.pdf"
+      },
+      {
+        "name": "Wannabe Influencer",
+        "path": "/assets/study%20guides/Media/Wannabe%20Influencer%20Study%20Guide%20MUSE.pdf"
+      }
+    ]
   },
   {
-    category: "Literature",
-    subCategories: [
-      { name: "Directive", path: "/assets/pdf/Literature/Directive.pdf" },
+    "category": "Literature",
+    "subCategories": [
       {
-        name: "Darbaar-e-Ilham",
-        path: "/assets/pdf/Literature/Darbaar-e-Ilham.pdf",
+        "name": "Codex",
+        "path": "/assets/study%20guides/Literature/Codex%20Study%20Guide%20MUSE.pdf"
       },
       {
-        name: "Literary Litigation",
-        path: "/assets/pdf/Literature/Literary_Litigation.pdf",
+        "name": "Hearsay",
+        "path": "/assets/study%20guides/Literature/Hearsay%20Study%20Guide%20MUSE.pdf"
       },
-      { name: "Exegisis", path: "/assets/pdf/Literature/Exegesis.pdf" },
-    ],
+      {
+        "name": "Ingenium",
+        "path": "/assets/study%20guides/Literature/Ingenium%20Study%20Guide%20MUSE.pdf"
+      },
+      {
+        "name": "Qalam-e-Qirtas",
+        "path": "/assets/study%20guides/Literature/Qalam-e-Qirtas%20Study%20Guide%20MUSE.pdf"
+      }
+    ]
   },
   {
-    category: "Music",
-    subCategories: [
+    "category": "Music",
+    "subCategories": [
       {
-        name: "Battle of the Bands",
-        path: "/assets/pdf/Music/Battle_of_the_Bands.pdf",
+        "name": "Battle of the Bands",
+        "path": "/assets/study%20guides/Music/Battle%20of%20the%20Bands%20Study%20Guide%20MUSE.pdf"
       },
       {
-        name: "Instrumental Showcase",
-        path: "/assets/pdf/Music/Instrumentals.pdf",
+        "name": "Eastern Vocals",
+        "path": "/assets/study%20guides/Music/Eastern%20Vocals%20Study%20Guide%20MUSE.pdf"
       },
-      { name: "Eastern Vocals", path: "/assets/pdf/Music/Eastern_Vocals.pdf" },
-      { name: "Western Vocals", path: "/assets/pdf/Music/Western_Vocals.pdf" },
-    ],
+      {
+        "name": "Instrumentals",
+        "path": "/assets/study%20guides/Music/Instrumentals%20Study%20Guide%20MUSE.pdf"
+      },
+      {
+        "name": "Western Vocals",
+        "path": "/assets/study%20guides/Music/Western%20Vocals%20Study%20Guide%20MUSE.pdf"
+      }
+    ]
   },
   {
-    category: "Drama",
-    subCategories: [
-      { name: "Monologue", path: "/assets/pdf/drama/Monologue.pdf" },
-      { name: "Nautanki", path: "/assets/pdf/drama/Nautanki.pdf" },
-      { name: "Freeze Frame", path: "/assets/pdf/drama/Freeze_Frame.pdf" },
-      { name: "Jang-e-Improv", path: "/assets/pdf/drama/Jang-e-Improv.pdf" },
-    ],
+    "category": "Drama",
+    "subCategories": [
+      {
+        "name": "Dead Poets Honour",
+        "path": "/assets/study%20guides/Drama/Dead%20Poets%20Honour%20Study%20Guide%20MUSE.pdf"
+      },
+      {
+        "name": "Hit Single",
+        "path": "/assets/study%20guides/Drama/Hit%20Single%20Study%20Guide%20MUSE.pdf"
+      },
+      {
+        "name": "Project Mayhem",
+        "path": "/assets/study%20guides/Drama/Project%20Mayhem%20Study%20Guide%20MUSE.pdf"
+      },
+      {
+        "name": "Timeline",
+        "path": "/assets/study%20guides/Drama/Timeline%20Study%20Guide%20MUSE.pdf"
+      }
+    ]
   },
   {
-    category: "Miscellaneous",
-    subCategories: [
-      {
-        name: "lgsjtmuse_(edited)_FINAL_real_3.psd",
-        path: "/assets/pdf/MISC/lgsjtmuse_(edited)_FINAL_real_3 Study Guide.pdf",
-      },
-      {
-        name: "The Yellow House",
-        path: "/assets/pdf/MISC/The_Yellow_House.pdf",
-      },
-      { name: "Pawn to E3", path: "/assets/pdf/MISC/Pawn_to_E3.pdf" },
-    ],
-  },
+    "category": "Miscellaneous",
+    "subCategories": [
+      { "name": "lgsjtmuse_(edited)_FINAL_real_3.psd", "path": null },
+      { "name": "The Yellow House", "path": null },
+      { "name": "Pawn to E3", "path": null }
+    ]
+  }
 ];
 
 export default data;

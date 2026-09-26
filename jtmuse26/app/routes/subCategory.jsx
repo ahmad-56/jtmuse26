@@ -78,6 +78,7 @@ function SubCategory({ params }) {
           <a
             key={index}
             href={subCat.path}
+            aria-disabled={!subCat.path || undefined}
             target="_blank"
             rel="noopener noreferrer"
             className="group relative mx-auto flex min-h-[120px] w-full cursor-pointer flex-col items-center justify-center overflow-hidden rounded-2xl border border-[#ffc664]/30 bg-gradient-to-br from-[#232323]/60 to-[#181818]/60 p-6 shadow-xl backdrop-blur-md transition-all duration-300 ease-in-out hover:border-[#ffc664]/60 hover:shadow-2xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#ffc664] sm:min-h-[140px] sm:w-[90%] lg:w-[80%]"
@@ -90,7 +91,7 @@ function SubCategory({ params }) {
               {subCat.name}
             </span>
             <span className="relative z-10 mt-1 whitespace-normal break-words text-center text-base font-medium text-[#fff2d6] sm:text-lg">
-              {subCat.description || "View study guide"}
+              {subCat.path ? subCat.description || "View study guide" : "Coming Soon"}
             </span>
           </a>
         ))}

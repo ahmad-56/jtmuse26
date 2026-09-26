@@ -4,7 +4,7 @@ const btnDetails = [
   {
     href: "/category/Arts",
     imgSrc: "/assets/categories/ArtsIcon.webp",
-    label: "Art",
+    label: "Arts",
   },
   {
     href: "/category/Media",
