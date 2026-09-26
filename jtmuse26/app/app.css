@@ -508,6 +508,12 @@ body {
   transition-delay: var(--contact-reveal-delay, 0ms), var(--contact-reveal-delay, 0ms), 0ms, 0ms, 0ms;
 }
 
+.registration-page .fillout-standard-embed iframe {
+  display: block;
+  /* Fillout sets rounded corners inline, so override them for this page. */
+  border-radius: 0 !important;
+}
+
 .Headings {
   font-family: "Nexa", Arial, sans-serif;
   text-align: center;

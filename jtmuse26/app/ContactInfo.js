@@ -57,12 +57,12 @@ const contacts = [
   {
     category: "Registrations",
     president: {
-      name: "Someone 1",
-      phone: "contact 1",
+      name: "Ahmad Hassan",
+      phone: "0310-4762482",
     },
     vicePresident: {
-      name: "someone 2",
-      phone: "contact 2",
+      name: "Naji",
+      phone: "0333-4388400",
     },
   },
 ];
