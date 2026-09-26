@@ -76,7 +76,7 @@ export function Layout({ children }) {
         <meta property="og:title" content="JT Muse'26" />
         <meta
           property="og:description"
-          content="The fourth edition of LGS JT's premier arts olympiad."
+          content="The Fourth Edition of LGS JT's Art Olympiad, hosted by the Arts Council. 9 • 10 • 11 October 2026"
         />
         <meta
           property="og:image"
