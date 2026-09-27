@@ -15,6 +15,11 @@ const CountDown = () => {
     paintOrder: "stroke fill",
   };
 
+  const timerLabelStyle = {
+    WebkitTextStroke: "2px #000000",
+    paintOrder: "stroke fill",
+  };
+
   useEffect(() => {
     const targetDate = new Date("2026-10-09T00:00:00").getTime();
 
@@ -56,6 +61,7 @@ const CountDown = () => {
         </div>
         <div
           className="font-nexa-regular text-xs sm:text-sm text-brand-gold opacity-80 uppercase tracking-widest mt-1"
+          style={timerLabelStyle}
         >
           Days
         </div>
@@ -63,6 +69,7 @@ const CountDown = () => {
 
       <div
         className="text-2xl sm:text-3xl text-brand-gold opacity-60"
+        style={timerNumberStyle}
       >
         :
       </div>
@@ -77,6 +84,7 @@ const CountDown = () => {
         </div>
         <div
           className="font-nexa-regular text-xs sm:text-sm text-brand-gold opacity-80 uppercase tracking-widest mt-1"
+          style={timerLabelStyle}
         >
           Hour
         </div>
@@ -84,6 +92,7 @@ const CountDown = () => {
 
       <div
         className="text-2xl sm:text-3xl text-brand-gold opacity-60"
+        style={timerNumberStyle}
       >
         :
       </div>
@@ -98,6 +107,7 @@ const CountDown = () => {
         </div>
         <div
           className="font-nexa-regular text-xs sm:text-sm text-brand-gold opacity-80 uppercase tracking-widest mt-1"
+          style={timerLabelStyle}
         >
           Minutes
         </div>
@@ -105,6 +115,7 @@ const CountDown = () => {
 
       <div
         className="text-2xl sm:text-3xl text-brand-gold opacity-60"
+        style={timerNumberStyle}
       >
         :
       </div>
@@ -119,6 +130,7 @@ const CountDown = () => {
         </div>
         <div
           className="font-nexa-regular text-xs sm:text-sm text-brand-gold opacity-80 uppercase tracking-widest mt-1"
+          style={timerLabelStyle}
         >
           Seconds
         </div>
