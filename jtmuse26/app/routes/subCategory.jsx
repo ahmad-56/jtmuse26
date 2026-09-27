@@ -78,7 +78,7 @@ function SubCategory({ params }) {
           <div key={index} className="relative mx-auto w-full sm:w-[90%] lg:w-[80%]">
             {subCat.compulsory && (
               <span className="absolute left-1/2 top-0 z-20 -translate-x-1/2 -translate-y-1/2 rounded-sm bg-brand-gold px-3 py-1 text-[10px] font-bold uppercase tracking-wide text-[#232323]">
-                Compulsory Category
+                Compulsory (one team per institution)
               </span>
             )}
           <a

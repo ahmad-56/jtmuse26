@@ -112,7 +112,9 @@ const data = [
         "compulsory": true,
         "path": "/assets/study%20guides/Misc/yellowhouse.pdf"
       },
-      { "name": "lgsjtmuse_(edited)_FINAL_real_3.psd", "path": null },
+      { 
+        "name": "Naach & Nuance", 
+        "path": "/assets/study%20guides/Misc/naach_nuance.pdf" },
     ]
   }
 ];
