@@ -75,13 +75,18 @@ function SubCategory({ params }) {
 
       <div className="mt-12 grid w-full grid-cols-1 items-center justify-center gap-8 px-2 sm:grid-cols-2 sm:px-10 lg:grid-cols-2">
         {subCategories.map((subCat, index) => (
+          <div key={index} className="relative mx-auto w-full sm:w-[90%] lg:w-[80%]">
+            {subCat.compulsory && (
+              <span className="absolute left-1/2 top-0 z-20 -translate-x-1/2 -translate-y-1/2 rounded-sm bg-brand-gold px-3 py-1 text-[10px] font-bold uppercase tracking-wide text-[#232323]">
+                Compulsory Category
+              </span>
+            )}
           <a
-            key={index}
             href={subCat.path}
             aria-disabled={!subCat.path || undefined}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative mx-auto flex min-h-[120px] w-full cursor-pointer flex-col items-center justify-center overflow-hidden rounded-2xl border border-brand-gold/30 bg-gradient-to-br from-[#232323]/60 to-[#181818]/60 p-6 shadow-xl backdrop-blur-md transition-all duration-300 ease-in-out hover:border-brand-gold/60 hover:shadow-2xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-gold sm:min-h-[140px] sm:w-[90%] lg:w-[80%]"
+            className={`group relative flex min-h-[120px] w-full cursor-pointer flex-col items-center justify-center overflow-hidden rounded-2xl border border-brand-gold/30 bg-gradient-to-br from-[#232323]/60 to-[#181818]/60 p-6 shadow-xl backdrop-blur-md transition-all duration-300 ease-in-out hover:border-brand-gold/60 hover:shadow-2xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-gold sm:min-h-[140px] ${subCat.compulsory ? "study-guide-compulsory" : ""}`}
           >
             <span className="pointer-events-none absolute inset-y-0 -left-1/2 w-1/3 -skew-x-12 bg-gradient-to-r from-transparent via-white/10 to-transparent transition-all duration-1000 group-hover:left-[125%]" />
             
@@ -94,6 +99,7 @@ function SubCategory({ params }) {
               {subCat.path ? subCat.description || "View study guide" : "Coming Soon"}
             </span>
           </a>
+          </div>
         ))}
       </div>
 

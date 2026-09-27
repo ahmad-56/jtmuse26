@@ -514,6 +514,15 @@ body {
   border-radius: 0 !important;
 }
 
+.study-guide-compulsory {
+  border-color: var(--color-brand-gold);
+  box-shadow: 0 0 14px rgb(246 219 135 / 22%), inset 0 0 10px rgb(246 219 135 / 6%);
+}
+
+.study-guide-compulsory:hover {
+  box-shadow: 0 0 20px rgb(246 219 135 / 32%), inset 0 0 12px rgb(246 219 135 / 10%);
+}
+
 .Headings {
   font-family: "Nexa", Arial, sans-serif;
   text-align: center;

@@ -107,9 +107,12 @@ const data = [
   {
     "category": "Miscellaneous",
     "subCategories": [
+      {
+        "name": "The Yellow House",
+        "compulsory": true,
+        "path": "/assets/study%20guides/Misc/yellowhouse.pdf"
+      },
       { "name": "lgsjtmuse_(edited)_FINAL_real_3.psd", "path": null },
-      { "name": "The Yellow House", "path": null },
-      { "name": "Pawn to E3", "path": null }
     ]
   }
 ];
