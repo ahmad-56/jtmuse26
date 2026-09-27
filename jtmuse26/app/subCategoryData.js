@@ -25,7 +25,7 @@ const data = [
     "subCategories": [
       {
         "name": "Director's Cut",
-        "path": "/assets/study%20guides/Media/Director_s%20Cut%20Study%20Guide%20MUSE.pdf"
+        "path": "/assets/study%20guides/Media/Director's%20Cut%20Study%20Guide%20MUSE.pdf"
       },
       {
         "name": "Gartic-photo",
