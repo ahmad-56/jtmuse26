@@ -17,7 +17,7 @@ export function meta({}) {
     { title: "JT Muse'26" },
     {
       name: "description",
-      content: "The forth edition of Lgs Jt's Premier Art Olympiad",
+      content: "The Fourth Edition of LGS JT's Art Olympiad, hosted by the Arts Council. 9 • 10 • 11 October 2026",
     },
   ];
 }

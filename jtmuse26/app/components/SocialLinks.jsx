@@ -12,19 +12,25 @@ const links = [
   },
   {
     label: "Website",
-    href: "https://lgsjtmuse.com",
+    href: "https://jtmuse.com",
     external: true,
     icon: "M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6Zm2 0v12h12V6H6Zm2 2h8v2H8V8Zm0 4h8v2H8v-2Zm0 4h5v2H8v-2Z",
   },
+  {
+    label: "Location",
+    href: "https://www.google.com/maps/search/?api=1&query=Lahore%20Grammar%20School%20for%20Boys%2C%20364-E%2F1%2C%20Johar%20Town%2C%20Lahore",
+    external: true,
+    icon: "M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z",
+  },
 ];
 
-export default function SocialLinks() {
+export default function SocialLinks({ showLocation = false }) {
   return (
     <nav
       aria-label="Connect with JT Muse"
       className="mt-2 inline-flex items-center justify-center gap-6 rounded-2xl border border-brand-gold/20 bg-white/20 px-8 py-3 shadow-xl backdrop-blur-md"
     >
-      {links.map(({ label, href, external, icon }) => (
+      {links.filter(({ label }) => showLocation || label !== "Location").map(({ label, href, external, icon }) => (
         <a
           key={label}
           href={href}
