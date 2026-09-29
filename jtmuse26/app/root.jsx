@@ -15,7 +15,7 @@ import { useEffect, useRef, useState } from "react";
 
 export function meta() {
   return [
-    { title: "JT Muse'26" },
+    { title: "LGS JT Muse 2026 | Official Website" },
     {
       name: "description",
       content:

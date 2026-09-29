@@ -14,7 +14,7 @@ const regiInfo = contacts.find((item) => item.category === "Registrations");
 
 export function meta({}) {
   return [
-    { title: "JT Muse'26" },
+    { title: "LGS JT Muse 2026 | Official Website" },
     {
       name: "description",
       content: "The Fourth Edition of LGS JT's Art Olympiad, hosted by the Arts Council. 9 • 10 • 11 October 2026",
