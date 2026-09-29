@@ -64,7 +64,7 @@ function About() {
           {/*<span className="font-bold text-brand-gold">if they want to make anything bold later on</span>*/}
         </div>
         <div
-          className={`w-full flex justify-center mt-6 transition-all duration-700 ease-out ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+          className={`w-full flex flex-col items-center gap-6 mt-6 transition-all duration-700 ease-out ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
           style={{ transitionDelay: inView ? "400ms" : "0ms" }}
         >
           <a href="/assets/pdf/invite.pdf" target="_blank" rel="noopener noreferrer">
