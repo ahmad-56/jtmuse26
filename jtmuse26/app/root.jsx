@@ -93,7 +93,7 @@ export function Layout({ children }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:image"
-          content="https://lgsjtmuse.com/assets/images/insta.jpg"
+          content="https://jtmuse.com/assets/images/insta.jpg"
         />
         {/* Preload priority for background images and use webp for faster loading times*/}
         <link
