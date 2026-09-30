@@ -67,7 +67,7 @@ function About() {
           className={`w-full flex flex-col items-center gap-6 mt-6 transition-all duration-700 ease-out ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
           style={{ transitionDelay: inView ? "400ms" : "0ms" }}
         >
-          <a href="/assets/pdf/invite.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/assets/study guides/invite.pdf" target="_blank" rel="noopener noreferrer">
             <Button
               text="View Event Invite"
               color="var(--color-brand-gold)"

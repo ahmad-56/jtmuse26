@@ -16,7 +16,7 @@ function Navbar({ forceFullWidth = false }) {
     { name: "info", path: "/#about" },
     { name: "categories", path: "/#categories" },
     { name: "register", path: "/register" },
-    { name: "contact", path: "/contact" },
+    { name: "contact", path: "/#contact" },
   ];
 
 
@@ -41,6 +41,7 @@ function Navbar({ forceFullWidth = false }) {
   };
 
   const handleContactClick = (e) => {
+    setIsExpanded(false);
     if (location.pathname === "/") {
       e.preventDefault();
       const contactSection = document.getElementById("contact");
@@ -198,7 +199,9 @@ function Navbar({ forceFullWidth = false }) {
                     ? handleInfoClick
                     : link.name === "categories"
                       ? handleCategoriesClick
-                      : undefined
+                      : link.name === "contact"
+                        ? handleContactClick
+                        : undefined
                 }
                 className={({ isActive }) => {
                   let active = isActive;

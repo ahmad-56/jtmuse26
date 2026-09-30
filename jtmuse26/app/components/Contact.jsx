@@ -27,7 +27,7 @@ function Contact() {
     <div
       id="contact"
       ref={contactRef}
-      className="relative min-h-screen flex flex-col items-center justify-center py-16 px-4 sm:px-8 md:px-12 lg:px-20 overflow-x-hidden bg-gradient-to-br from-[#232323]/10 to-[#181818]/10 backdrop-blur border border-white/20  shadow-2xl mx-auto"
+      className="relative scroll-mt-20 min-h-screen flex flex-col items-center justify-center py-16 px-4 sm:px-8 md:px-12 lg:px-20 overflow-x-hidden bg-gradient-to-br from-[#232323]/10 to-[#181818]/10 backdrop-blur border border-white/20  shadow-2xl mx-auto"
     >
       {/* Subtle artsy background */}
       <div className="absolute inset-0 -z-10 bg-gradient-to-br from-[#232323]/40 to-[#181818]/40 backdrop-blur border border-white/20" />
