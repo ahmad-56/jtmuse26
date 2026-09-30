@@ -57,11 +57,11 @@ const contacts = [
   {
     category: "Registrations",
     president: {
-      name: "Ahmad Hassan",
+      name: "M Ahmad Hassan",
       phone: "0310-4762482",
     },
     vicePresident: {
-      name: "Naji",
+      name: "Rayaan Ahmed Naji",
       phone: "0333-4388400",
     },
   },
