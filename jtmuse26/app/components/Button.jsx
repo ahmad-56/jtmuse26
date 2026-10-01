@@ -4,9 +4,13 @@ const Button = ({
   text,
   glowColor = "var(--color-brand-gold)",
   onClick,
+  href,
+  target,
+  rel,
   color = "var(--color-brand-gold)",
   textColor = "#232323"
 }) => {
+  const Component = href ? "a" : "button";
   const btnRef = useRef(null);
   const [hovered, setHovered] = useState(false);
   const [ripples, setRipples] = useState([]);
@@ -40,8 +44,11 @@ const Button = ({
   };
 
   return (
-    <button
+    <Component
       ref={btnRef}
+      href={href}
+      target={target}
+      rel={rel}
       onMouseEnter={handleMouseEnter}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
@@ -83,7 +90,7 @@ const Button = ({
       <span className="relative z-20 text-lg uppercase tracking-widest font-nexa-regular">
         {text}
       </span>
-    </button>
+    </Component>
   );
 };
 
