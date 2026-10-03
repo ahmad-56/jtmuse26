@@ -523,6 +523,50 @@ body {
   box-shadow: 0 0 20px rgb(246 219 135 / 32%), inset 0 0 12px rgb(246 219 135 / 10%);
 }
 
+.category-glass-card {
+  isolation: isolate;
+  border: 1px solid rgb(255 255 255 / 28%);
+  border-top-color: rgb(255 255 255 / 55%);
+  border-bottom-color: rgb(255 255 255 / 16%);
+  background: rgb(255 255 255 / 9%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  backdrop-filter: blur(24px) saturate(180%);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 28%),
+    inset 0 -1px 0 rgb(255 255 255 / 12%);
+  transition: border-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
+}
+
+.category-glass-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  background: linear-gradient(125deg, rgb(255 255 255 / 12%), transparent 40%);
+}
+
+@media (hover: hover) {
+  .category-glass-card:hover {
+    border-color: rgb(255 198 100 / 60%);
+    box-shadow:
+      inset 0 1px 0 rgb(255 255 255 / 28%),
+      inset 0 -1px 0 rgb(255 255 255 / 12%),
+      0 25px 50px -12px rgb(0 0 0 / 25%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .category-glass-card {
+    transition: none;
+  }
+}
+
+.category-glass-card:focus-visible {
+  outline: 2px solid var(--color-brand-gold);
+  outline-offset: 5px;
+}
+
 .Headings {
   font-family: "Nexa", Arial, sans-serif;
   text-align: center;

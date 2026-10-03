@@ -1,34 +1,33 @@
-import CategoriesBtn from "./CategoriesBtn";
 import { useState, useEffect, useRef } from "react";
 const btnDetails = [
   {
     href: "/category/Arts",
-    imgSrc: "/assets/categories/ArtsIcon.webp",
+    imgSrc: "/assets/icons/Art.png",
     label: "Arts",
   },
   {
     href: "/category/Media",
-    imgSrc: "/assets/categories/MediaIcon.webp",
+    imgSrc: "/assets/icons/Media.png",
     label: "Media",
   },
   {
     href: "/category/Literature",
-    imgSrc: "/assets/categories/LitIcon.webp",
+    imgSrc: "/assets/icons/Lit.png",
     label: "Literature",
   },
   {
     href: "/category/Music",
-    imgSrc: "/assets/categories/MusicIcon.webp",
+    imgSrc: "/assets/icons/Music.png",
     label: "Music",
   },
   {
     href: "/category/Drama",
-    imgSrc: "/assets/categories/DramaIcon.webp",
+    imgSrc: "/assets/icons/Drama.png",
     label: "Drama",
   },
   {
     href: "/category/Miscellaneous",
-    imgSrc: "/assets/categories/MiscIcon.webp",
+    imgSrc: "/assets/icons/Misc.png",
     label: "Misc",
   },
 ];
@@ -72,17 +71,18 @@ function Categories() {
           <div key={index} className="flex flex-col items-center w-full">
             <a
               href={btn.href}
-              className="inline-flex justify-center items-center animated-bg z-10 relative text-white cursor-pointer min-w-[120px] max-w-[180px] w-[40vw] h-[40vw] min-h-[120px] max-h-[180px] md:min-w-[160px] md:max-w-[220px] md:min-h-[160px] md:max-h-[220px] rounded-2xl overflow-hidden border border-brand-gold/30 shadow-xl hover:shadow-2xl transition-shadow duration-300 ease-in-out bg-gradient-to-br from-[#232323]/70 to-[#181818]/70 backdrop-blur-md"
-              style={{
-                backgroundImage: 'url("/assets/categories/btnBg.webp")',
-                backgroundSize: "400% 400%",
-                backgroundPosition: "center right",
-                backgroundRepeat: "no-repeat",
-              }}
+              className="group category-glass-card inline-flex justify-center items-center z-10 relative text-white cursor-pointer min-w-[120px] max-w-[180px] w-[40vw] h-[40vw] min-h-[120px] max-h-[180px] md:min-w-[160px] md:max-w-[220px] md:min-h-[160px] md:max-h-[220px] rounded-[28px] overflow-hidden"
             >
-              <div className="absolute inset-0 bg-white/10 z-9 backdrop-blur-[3px]" />
+              <span
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-y-0 -left-1/2 w-1/3 -skew-x-12 bg-gradient-to-r from-transparent via-white/10 to-transparent transition-all duration-1000 group-hover:left-[125%] motion-reduce:hidden"
+              />
+              <span
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-0 z-0 rounded-[inherit] bg-white/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100 motion-reduce:transition-none"
+              />
               <img
-                className="z-10 relative scale-125"
+                className={`z-10 relative ${btn.label === "Arts" ? "scale-225" : "scale-250"}`}
                 src={btn.imgSrc}
                 alt={btn.label}
               />
