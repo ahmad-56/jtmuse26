@@ -57,8 +57,8 @@ const contacts = [
   {
     category: "Registrations",
     president: {
-      name: "M Ahmad Hassan",
-      phone: "0310-4762482",
+      name: "Ayaan Aquib",
+      phone: "0316-4846440",
     },
     vicePresident: {
       name: "Rayaan Ahmed Naji",
