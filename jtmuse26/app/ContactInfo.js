@@ -57,12 +57,12 @@ const contacts = [
   {
     category: "Registrations",
     president: {
-      name: "Ayaan Aquib",
-      phone: "0316-4846440",
-    },
-    vicePresident: {
       name: "Rayaan Ahmed Naji",
       phone: "0333-4388400",
+    },
+    vicePresident: {
+      name: "M Ahmad Hassan",
+      phone: "0310-4762482",
     },
   },
 ];
