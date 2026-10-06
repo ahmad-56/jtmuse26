@@ -114,7 +114,7 @@ const data = [
       },
       {
         "name": "Artpreneur",
-        "path": "https://www.jtempresario.com/ArtPreneur%20-%20Study%20Guide.pdf",
+        "path": "/assets/study%20guides/Misc/artpreneur.pdf",
         "badge": "MUSE X EMPRESARIO",
         "accentColor": "#ac0e49"
       },
