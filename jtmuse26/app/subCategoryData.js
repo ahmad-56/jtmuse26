@@ -112,9 +112,16 @@ const data = [
         "compulsory": true,
         "path": "/assets/study%20guides/Misc/yellowhouse.pdf"
       },
+      {
+        "name": "Artpreneur",
+        "path": "https://www.jtempresario.com/ArtPreneur%20-%20Study%20Guide.pdf",
+        "badge": "MUSE X EMPRESARIO",
+        "accentColor": "#ac0e49"
+      },
       { 
         "name": "Naach & Nuance", 
-        "path": "/assets/study%20guides/Misc/naach_nuance.pdf" },
+        "path": "/assets/study%20guides/Misc/naach_nuance.pdf" 
+      },
     ]
   }
 ];
