@@ -1,63 +1,62 @@
 # JT Muse '26
 
-The website for the fourth edition of JT Muse, the arts olympiad organized by the Arts Council of LGS Johar Town. It brings the event details, competition categories, study guides, registration form, and contact information together so teams can find what they need in one place.
+This is the repo of the website for the fourth edition of LGS JT Muse, LGS Johar Town's arts olympiad, which was held on 9–11 October 2026. The main purpose of the website was to help delegates explore the categories, find the study guides, register for the event, and get in touch with the Arts Council.
 
-The site is built with React 19, React Router 7, Vite, and Tailwind CSS 4. Registration uses an embedded Fillout form.
+![JT Muse homepage](screenshots/home.png)
 
-## Running it locally
+## Visit the website
 
-You'll need Node.js 20 or newer and npm. Open a terminal in this folder, then install the dependencies:
+Check out the website: [https://jtmuse.com](https://jtmuse.com/) 
+
+```bash
+https://jtmuse.com
+```
+
+Alt Link: [https://jtmuse26.vercel.app/](https://jtmuse26.vercel.app/)
+```bash
+https://jtmuse26.vercel.app/
+```
+
+## Structure & Layout:
+
+### The homepage
+
+The comic-style school illustration gives the site its character. The Muse logo sits in the middle, with the countdown and main navigation underneath. Gold text and dark, translucent panels carry the same look through the rest of the site.
+
+The navigation stays within the hero when you first arrive, then moves to the top as you scroll past it. That keeps the opening screen focused on the artwork while still making the other pages easy to reach.
+
+The 2026 event has passed, so the countdown now shows zero.
+
+### Categories & Study Guides:
+
+There are six main categories: Arts, Media, Literature, Music, Drama, and Miscellaneous. Each has its own illustrated card, when clicked respective category's page is opened and name of the categories are displayed. Opening a category will open the PDF study guide.
+
+![The six JT Muse category cards](screenshots/categories.png)
+![Music competitions and their study guide links](screenshots/study-guides.png)
+
+### Registration:
+
+The registration page embeds a Fillout form directly into the site. Delegates can reach it from the main navigation, and the form itself is managed through Fillout.
+
+### Contact and location
+
+The contact page showcases 10 Arts Council members along side 2 Registration Team Members. 6 Boxes represent 6 different roles and have 12 contacts. The school location is also added to help users navigate their way to the destination.
+
+![JT Muse contact page with Arts Council contacts](screenshots/contact.png)
+
+## Running locally
+
+You'll need to install Node.js and npm. From the `jtmuse26` folder, run:
 
 ```bash
 npm ci
-```
-
-Start the development server:
-
-```bash
 npm run dev
 ```
 
-Open the address printed in the terminal, usually `http://localhost:5173`. Changes to the code will appear as you save them.
+Open the local host link displayed in the terminal, usually: [localhost:5173](http://localhost:5173/).
 
-## Where to make changes
+## Search and sharing
 
-Most day-to-day updates happen in these files:
+I also added page descriptions, social sharing metadata, a favicon, and a sitemap. The website is also connected to Google Search Console to monitor its performance in Google Search and help it display when someone uses Google to search for the website.
 
-| What you want to update | Where to look |
-| --- | --- |
-| Category names and study guide links | `app/subCategoryData.js` |
-| Category cards and badges | `app/routes/subCategory.jsx` |
-| Homepage layout | `app/routes/home.jsx` |
-| Homepage sections, navigation, and footer | `app/components/` |
-| Registration form | `app/routes/register.jsx` |
-| Contact details | `app/ContactInfo.js` |
-| Shared styles, colors, and animations | `app/app.css` |
-| Page metadata and shared layout | `app/root.jsx` |
-| Page routes | `app/routes.js` |
-
-Images, fonts, and PDFs live in `public/assets/`. To replace a study guide, add the PDF to the appropriate folder under `public/assets/study guides/`, then update its path in `app/subCategoryData.js`. Public links start with `/assets/`, without `public/`, and spaces in URLs are written as `%20`.
-
-## Checking a production build
-
-Before deploying a change, build the site and start the production server:
-
-```bash
-npm run build
-npm start
-```
-
-Open the address shown in the terminal and check the pages you changed. For category updates, also click the study guide links to make sure they open the right files.
-
-The build creates `build/client/` for browser assets and `build/server/` for server rendering. A successful build is useful, but checking the running site can catch issues that only appear when a page loads.
-
-## Running with Docker
-
-If you use Docker, the included Dockerfile handles installing dependencies and building the site:
-
-```bash
-docker build -t jtmuse26 .
-docker run --rm -p 3000:3000 jtmuse26
-```
-
-Then open `http://localhost:3000`.
+**Made by [Ahmad Hassan](https://github.com/ahmad-56), presented by the LGS JT IT Society.**
