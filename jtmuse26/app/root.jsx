@@ -10,6 +10,7 @@ import {
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import "./app.css";
+import "./temp.css";
 import { useLocation } from "react-router";
 import { useEffect, useRef, useState } from "react";
 
@@ -62,7 +63,8 @@ export function Layout({ children }) {
   }, [isHome]);
 
   return (
-    <html lang="en">
+    // Temporary preview: remove data-motion="quiet" to restore all original effects.
+    <html lang="en" data-motion="quiet">
       <head>
         <meta
           name="google-site-verification"
